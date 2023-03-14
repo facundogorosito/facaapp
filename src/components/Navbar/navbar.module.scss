@@ -1,0 +1,20 @@
+.container {
+    display: flex;
+    background-color: #a83e3e;
+    color: #2c733f;
+    justify-content: space-around;
+}
+
+.a {
+    display: flex;
+    text-decoration: none;
+    color: #f2eeee;
+}
+
+.nunItem {
+    padding: 5px;
+    background-color: #d11486;
+    color: rgb(156, 164, 171);
+    border-radius: 10px;
+    margin-left: 5px;
+}
