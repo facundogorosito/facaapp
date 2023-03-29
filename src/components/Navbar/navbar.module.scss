@@ -8,7 +8,7 @@
     margin: 30px;
     font-size: 25px;
     font-weight: 500;
-    color: black;
+    color: rgb(71, 2, 40);
     text-decoration:none;
 }
 li {
@@ -21,7 +21,7 @@ a {
     font-family: 'Roboto', sans-serif;
 }
 a:hover {
-    color:white;
+    color:rgb(222, 154, 154);
 }
 
 header {
@@ -37,10 +37,7 @@ header {
     align-items: center;
     justify-content: space-evenly;
 }
-.logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-}
+
 .nav_list {
     display: flex;
     justify-content: space-evenly;
