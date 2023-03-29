@@ -1,11 +1,12 @@
-import React from 'react'
+import styles from "../CartWidget/cartwidget.module.scss";
 
-const CartWidget = ({icono}) => {
-  return (
-    <div>
-        <img src={icono} alt="Carrito provisorio" width="20px"/>
-    </div>
-  )
-}
+const cartwidget = () => {
+    return (
+        <>
+        <i className="bi bi-cart3" ></i>
+        <span className={styles.cart_items_total}>0</span>
+        </>
+    );
+};
 
-export default CartWidget
+export default cartwidget;

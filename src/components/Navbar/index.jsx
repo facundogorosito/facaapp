@@ -1,18 +1,33 @@
-import React from "react";
-import CartWidget from "../CartWidget";
-import styles from "./Navbar.module.scss";
+import React from 'react'
+import styles from '../NavBar/navbar.module.scss'
+import CartWidget from '../CartWidget';
+import { Link, NavLink } from 'react-router-dom';
 
-const Navbar = () => {
-  return (
+const NavBar = ({ productos, setCategoriaSeleccionada }) => {
+    return (
+        <div className={styles.container}>
+            <nav className={styles.navbar}>
+                <div>
+                    <NavLink to={"/Home"} onClick={() => setCategoriaSeleccionada("")} className={styles.items}>
+                        Moda Urbana
+                    </NavLink>
+                </div>
+                <div className={styles.menu}>
+                    <NavLink to="/home" className={styles.items}>
+                        <p>Home</p>
+                    </NavLink>
+                    <NavLink to="/products" className={styles.items}>
+                        <p>Productos</p>
+                    </NavLink>
+                </div>
+                <div>
+                    <a className={styles.nav_link} href="#">
+                        <CartWidget />
+                    </a>
+                </div>
+            </nav>
+        </div>
+    );
+};
 
-    <div className={styles.container}>
-      <a className={styles.a} href="">INICIO</a>
-      <a className={styles.a} href="">COMPRAS DE SKINS</a>
-      <a className={styles.a} href="">CONTACTO</a>
-      <a className={styles.a} href="">SOBRE NOSOTROS</a>
-      <a className={styles.a} href="">Carrito <CartWidget icono="https://w7.pngwing.com/pngs/387/168/png-transparent-shopping-cart-button-graphy-earring-shopping-cart-angle-rectangle-logo.png" /><p className={styles.numItem}></p></a>
-     </div>
-  )
-}
-
-export default Navbar
+export default NavBar;
