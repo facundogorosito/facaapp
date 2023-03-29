@@ -1,4 +1,4 @@
-import styles from "../CartWidget/cartwidget.module.scss";
+import styles from "../CartWidget/Cartwidget.module.scss";
 
 const cartwidget = () => {
     return (

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Navigate, useParams } from "react-router-dom";
-import styles from "../CardDetail/carddetail.module.scss";
+import styles from "../CardDetail/Carddetail.module.scss";
 
 const CardDetail = () => {
     const [producto, setProducto] = useState({});

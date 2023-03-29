@@ -1,11 +1,10 @@
-import styles from '../Home/home.module.scss'
+import styles from '../Home/Home.module.scss'
 
 const Home = () => {
     return (
         <div className={styles.banner}>
             <div className={styles.bannerContainer}>
-
-                <H1>¡¡¡BIENVENDIDOS!!!</H1>
+                <h1>¡¡¡BIENVENDIDOS!!!</h1>
             </div>
         </div>
     );

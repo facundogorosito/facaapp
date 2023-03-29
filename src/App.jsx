@@ -1,6 +1,10 @@
 import './App.css'
 import { Navigate, Route, Routes } from 'react-router-dom'
 import { useEffect, useState } from 'react';
+import NavBar from './Components/NavBar';
+import Home from './Components/Home';
+import ItemListContainer from './Components/ItemListContainer';
+import CardDetail from './Components/CardDetail';
 
 function App() {
   const [productos, setProductos] = useState([])
