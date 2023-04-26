@@ -1,0 +1,29 @@
+.item-detail-wrapper {
+    background-color: #672626;
+    border: 1px solid #232020;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+    margin-right: 30%;
+    margin-left: 30%;
+  }
+  
+  .item-detail-container {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .item-detail-image-container {
+    margin-right: 20px;
+  }
+  
+  .item-detail-info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .buy-button {
+    margin-top: 5px;
+  }
+  

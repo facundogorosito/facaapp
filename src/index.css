@@ -1,0 +1,48 @@
+html {
+  background-color: #d5cbcb;
+}
+
+.NavContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(113, 107, 99);
+  padding: 30px;
+  color: rgb(30, 27, 27);
+  border-radius: 5px;
+}
+
+.NavContainer img {
+  width: 100px;
+  border:hidden
+}
+
+.links-container {
+  display: flex;
+  align-items: center;
+}
+
+a {
+  color: rgb(244, 238, 238);
+  text-decoration: none;
+  margin-left: 30px;
+  font-weight: bolder;
+  font-size: 1.5rem;
+}
+
+a:hover {
+  color: rgb(174, 174, 184);
+  font-size: 1.7rem;
+}
+
+img {
+  width: 150px;
+}
+
+.cart-messages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 200px);
+  flex-direction: column;
+}
