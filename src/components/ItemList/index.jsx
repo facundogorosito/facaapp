@@ -1,20 +1,17 @@
-import React from "react";
 import { Link } from "react-router-dom";
-import Item from "../Item";
-import "../ItemList/index.css";
+import styles from "./card.module.scss";
 
-function ItemList({ products }) {
-  return (
-    <div className="productContainer">
-      <ul className="productList">
-        {products.map((product) => (
-          <Link key={product.id} to={`/item/${product.id}`}>
-            <Item product={product} />
-          </Link>
-        ))}
-      </ul>
+const ItemList = ({ item }) => {
+return (
+    <div className={styles.container}>
+            <Link to={`${item.id}`}>
+                <h3 key={item.id}>{item.title}</h3>
+                <img src={item.image} alt={item.title} width="140" height="140"/>
+                <p>$ {item.price}</p>
+                <button>CLICK ACA!</button>
+            </Link>
     </div>
-  );
-}
+    );
+};
 
 export default ItemList;
